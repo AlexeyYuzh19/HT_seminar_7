@@ -55,7 +55,6 @@ void NAMBERS(out int size_0, out int size_1, out int leftRange, out int rightRan
 
     size_1 = CheckSize("Введите количество столбцов массива : ");
 
-
     while (true)
     {
         leftRange = CheckInputNumber("Введите величину левого значения (края) массива : ");
