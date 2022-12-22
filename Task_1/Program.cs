@@ -49,7 +49,7 @@ int CheckSize(string text)
     return size;
 }
 
-void NAMBERS(out int size_0, out int size_1, out int leftRange, out int rightRange)
+void EnterArrayParameter(out int size_0, out int size_1, out int leftRange, out int rightRange)
 {
     size_0 = CheckSize("Введите количество строк массива : ");
 
@@ -95,6 +95,9 @@ void MakePrintArray(int m, int n, int leftRange, int rightRange)
 
 //  Код задачи
 
-NAMBERS(out int size_0, out int size_1, out int leftRange, out int rightRange);
+EnterArrayParameter(out int size_0, out int size_1, out int leftRange, out int rightRange);
+
+System.Console.WriteLine($"\nДвумерный массив размером | {size_0} x {size_1} |, заполненный случайными вещественными числами :\n");
 
 MakePrintArray(size_0, size_1, leftRange, rightRange);
+System.Console.WriteLine("");
