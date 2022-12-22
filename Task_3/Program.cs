@@ -142,7 +142,7 @@ int[,] Arr = MakePrintArray(size_0, size_1, leftRange, rightRange);
 
 Console.ForegroundColor = ConsoleColor.Yellow;
 
-System.Console.WriteLine("\nСреднее арифметическое элементов в каждом столбце массива :\n");
+System.Console.WriteLine("\nСреднее арифметическое значение элементов в каждом столбце массива :\n");
 
 ArithmeticMeanColumn(size_0, size_1, Arr);
 
