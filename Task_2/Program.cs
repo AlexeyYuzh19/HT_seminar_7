@@ -70,7 +70,7 @@ metka:
     return size;
 }
 
-void NAMBERS(out int size_0, out int size_1, out int leftRange, out int rightRange)
+void EnterArrayParameter(out int size_0, out int size_1, out int leftRange, out int rightRange)
 {
     size_0 = CheckSize("Введите количество строк массива : ");
 
@@ -125,7 +125,7 @@ int[,] MakePrintArray(int m, int n, int leftRange, int rightRange)
 
 //  Код задачи
 
-NAMBERS(out int size_0, out int size_1, out int leftRange, out int rightRange);
+EnterArrayParameter(out int size_0, out int size_1, out int leftRange, out int rightRange);
 
 int[,] Arr = MakePrintArray(size_0, size_1, leftRange, rightRange);
 
@@ -133,7 +133,7 @@ int Ai = CheckPosition("\nЗадайте позицию элемента в ст
 
 int Aj = CheckPosition("Задайте позицию элемента в столбце массива : ");
 
-string result = (Ai < size_0 && Aj < size_1) ? $"\nЗначение элемента массива заданной позиции = {Arr[Ai, Aj]}" : "Числа с заданной позицией в массиве нет.";
+string result = (Ai < size_0 && Aj < size_1) ? $"\nЗначение элемента массива заданной позиции = {Arr[Ai, Aj]}\n" : "\nЧисла с заданной позицией в массиве нет.\n";
 
 Console.ForegroundColor = ConsoleColor.Green;
 System.Console.WriteLine(result);
